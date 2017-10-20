@@ -1,0 +1,137 @@
+total 30540
+drwxr-xr-x  6 root root    12288 Oct 20 12:47 .
+drwxr-xr-x 10 root root     4096 Oct 20 12:42 ..
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_aruco.so -> libopencv_aruco.so.3.3
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_aruco.so.3.3 -> libopencv_aruco.so.3.3.0
+-rw-r--r--  1 root staff  306764 Oct 10 11:16 libopencv_aruco.so.3.3.0
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_bgsegm.so -> libopencv_bgsegm.so.3.3
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_bgsegm.so.3.3 -> libopencv_bgsegm.so.3.3.0
+-rw-r--r--  1 root staff   77104 Oct 10 10:31 libopencv_bgsegm.so.3.3.0
+lrwxrwxrwx  1 root root       28 Oct 20 12:42 libopencv_bioinspired.so -> libopencv_bioinspired.so.3.3
+lrwxrwxrwx  1 root root       30 Oct 20 12:42 libopencv_bioinspired.so.3.3 -> libopencv_bioinspired.so.3.3.0
+-rw-r--r--  1 root staff  301864 Oct 10 10:35 libopencv_bioinspired.so.3.3.0
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_calib3d.so -> libopencv_calib3d.so.3.3
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_calib3d.so.3.3 -> libopencv_calib3d.so.3.3.0
+-rw-r--r--  1 root staff 1392652 Oct 10 11:10 libopencv_calib3d.so.3.3.0
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_ccalib.so -> libopencv_ccalib.so.3.3
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_ccalib.so.3.3 -> libopencv_ccalib.so.3.3.0
+-rw-r--r--  1 root staff  352804 Oct 10 11:12 libopencv_ccalib.so.3.3.0
+lrwxrwxrwx  1 root root       21 Oct 20 12:42 libopencv_core.so -> libopencv_core.so.3.3
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_core.so.3.3 -> libopencv_core.so.3.3.0
+-rw-r--r--  1 root staff 3438248 Oct 10 10:14 libopencv_core.so.3.3.0
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_datasets.so -> libopencv_datasets.so.3.3
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_datasets.so.3.3 -> libopencv_datasets.so.3.3.0
+-rw-r--r--  1 root staff  549248 Oct 10 10:58 libopencv_datasets.so.3.3.0
+lrwxrwxrwx  1 root root       20 Oct 20 12:42 libopencv_dnn.so -> libopencv_dnn.so.3.3
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_dnn.so.3.3 -> libopencv_dnn.so.3.3.0
+-rw-r--r--  1 root staff 3781692 Oct 10 10:38 libopencv_dnn.so.3.3.0
+lrwxrwxrwx  1 root root       20 Oct 20 12:42 libopencv_dpm.so -> libopencv_dpm.so.3.3
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_dpm.so.3.3 -> libopencv_dpm.so.3.3.0
+-rw-r--r--  1 root staff  105928 Oct 10 10:34 libopencv_dpm.so.3.3.0
+lrwxrwxrwx  1 root root       21 Oct 20 12:42 libopencv_face.so -> libopencv_face.so.3.3
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_face.so.3.3 -> libopencv_face.so.3.3.0
+-rw-r--r--  1 root staff  147756 Oct 10 10:29 libopencv_face.so.3.3.0
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_features2d.so -> libopencv_features2d.so.3.3
+lrwxrwxrwx  1 root root       29 Oct 20 12:42 libopencv_features2d.so.3.3 -> libopencv_features2d.so.3.3.0
+-rw-r--r--  1 root staff  710768 Oct 10 10:38 libopencv_features2d.so.3.3.0
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_flann.so -> libopencv_flann.so.3.3
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_flann.so.3.3 -> libopencv_flann.so.3.3.0
+-rw-r--r--  1 root staff  389668 Oct 10 10:16 libopencv_flann.so.3.3.0
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_freetype.so -> libopencv_freetype.so.3.3
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_freetype.so.3.3 -> libopencv_freetype.so.3.3.0
+-rw-r--r--  1 root staff   35936 Oct 10 10:29 libopencv_freetype.so.3.3.0
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_fuzzy.so -> libopencv_fuzzy.so.3.3
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_fuzzy.so.3.3 -> libopencv_fuzzy.so.3.3.0
+-rw-r--r--  1 root staff   93404 Oct 10 10:29 libopencv_fuzzy.so.3.3.0
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_highgui.so -> libopencv_highgui.so.3.3
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_highgui.so.3.3 -> libopencv_highgui.so.3.3.0
+-rw-r--r--  1 root staff   85360 Oct 10 10:32 libopencv_highgui.so.3.3.0
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_imgcodecs.so -> libopencv_imgcodecs.so.3.3
+lrwxrwxrwx  1 root root       28 Oct 20 12:42 libopencv_imgcodecs.so.3.3 -> libopencv_imgcodecs.so.3.3.0
+-rw-r--r--  1 root staff 1801808 Oct 10 10:25 libopencv_imgcodecs.so.3.3.0
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_img_hash.so -> libopencv_img_hash.so.3.3
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_img_hash.so.3.3 -> libopencv_img_hash.so.3.3.0
+-rw-r--r--  1 root staff  106488 Oct 10 10:30 libopencv_img_hash.so.3.3.0
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_imgproc.so -> libopencv_imgproc.so.3.3
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_imgproc.so.3.3 -> libopencv_imgproc.so.3.3.0
+-rw-r--r--  1 root staff 3579520 Oct 10 10:22 libopencv_imgproc.so.3.3.0
+lrwxrwxrwx  1 root root       32 Oct 20 12:42 libopencv_line_descriptor.so -> libopencv_line_descriptor.so.3.3
+lrwxrwxrwx  1 root root       34 Oct 20 12:42 libopencv_line_descriptor.so.3.3 -> libopencv_line_descriptor.so.3.3.0
+-rw-r--r--  1 root staff  170320 Oct 10 10:52 libopencv_line_descriptor.so.3.3.0
+lrwxrwxrwx  1 root root       19 Oct 20 12:42 libopencv_ml.so -> libopencv_ml.so.3.3
+lrwxrwxrwx  1 root root       21 Oct 20 12:42 libopencv_ml.so.3.3 -> libopencv_ml.so.3.3.0
+-rw-r--r--  1 root staff  744944 Oct 10 10:19 libopencv_ml.so.3.3.0
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_objdetect.so -> libopencv_objdetect.so.3.3
+lrwxrwxrwx  1 root root       28 Oct 20 12:42 libopencv_objdetect.so.3.3 -> libopencv_objdetect.so.3.3.0
+-rw-r--r--  1 root staff  400620 Oct 10 10:24 libopencv_objdetect.so.3.3.0
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_optflow.so -> libopencv_optflow.so.3.3
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_optflow.so.3.3 -> libopencv_optflow.so.3.3.0
+-rw-r--r--  1 root staff  376920 Oct 10 11:24 libopencv_optflow.so.3.3.0
+lrwxrwxrwx  1 root root       33 Oct 20 12:42 libopencv_phase_unwrapping.so -> libopencv_phase_unwrapping.so.3.3
+lrwxrwxrwx  1 root root       35 Oct 20 12:42 libopencv_phase_unwrapping.so.3.3 -> libopencv_phase_unwrapping.so.3.3.0
+-rw-r--r--  1 root staff   40544 Oct 10 10:22 libopencv_phase_unwrapping.so.3.3.0
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_photo.so -> libopencv_photo.so.3.3
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_photo.so.3.3 -> libopencv_photo.so.3.3.0
+-rw-r--r--  1 root staff  864416 Oct 10 10:28 libopencv_photo.so.3.3.0
+lrwxrwxrwx  1 root root       21 Oct 20 12:42 libopencv_plot.so -> libopencv_plot.so.3.3
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_plot.so.3.3 -> libopencv_plot.so.3.3.0
+-rw-r--r--  1 root staff   38868 Oct 10 10:23 libopencv_plot.so.3.3.0
+lrwxrwxrwx  1 root root       20 Oct 20 12:42 libopencv_reg.so -> libopencv_reg.so.3.3
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_reg.so.3.3 -> libopencv_reg.so.3.3.0
+-rw-r--r--  1 root staff  151992 Oct 10 10:25 libopencv_reg.so.3.3.0
+lrwxrwxrwx  1 root root       21 Oct 20 12:42 libopencv_rgbd.so -> libopencv_rgbd.so.3.3
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_rgbd.so.3.3 -> libopencv_rgbd.so.3.3.0
+-rw-r--r--  1 root staff  457072 Oct 10 11:13 libopencv_rgbd.so.3.3.0
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_saliency.so -> libopencv_saliency.so.3.3
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_saliency.so.3.3 -> libopencv_saliency.so.3.3.0
+-rw-r--r--  1 root staff  186332 Oct 10 10:53 libopencv_saliency.so.3.3.0
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_shape.so -> libopencv_shape.so.3.3
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_shape.so.3.3 -> libopencv_shape.so.3.3.0
+-rw-r--r--  1 root staff  217560 Oct 10 10:31 libopencv_shape.so.3.3.0
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_stereo.so -> libopencv_stereo.so.3.3
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_stereo.so.3.3 -> libopencv_stereo.so.3.3.0
+-rw-r--r--  1 root staff  161308 Oct 10 11:11 libopencv_stereo.so.3.3.0
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_stitching.so -> libopencv_stitching.so.3.3
+lrwxrwxrwx  1 root root       28 Oct 20 12:42 libopencv_stitching.so.3.3 -> libopencv_stitching.so.3.3.0
+-rw-r--r--  1 root staff  542816 Oct 10 11:23 libopencv_stitching.so.3.3.0
+lrwxrwxrwx  1 root root       33 Oct 20 12:42 libopencv_structured_light.so -> libopencv_structured_light.so.3.3
+lrwxrwxrwx  1 root root       35 Oct 20 12:42 libopencv_structured_light.so.3.3 -> libopencv_structured_light.so.3.3.0
+-rw-r--r--  1 root staff   91104 Oct 10 11:13 libopencv_structured_light.so.3.3.0
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_superres.so -> libopencv_superres.so.3.3
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_superres.so.3.3 -> libopencv_superres.so.3.3.0
+-rw-r--r--  1 root staff  165640 Oct 10 10:33 libopencv_superres.so.3.3.0
+lrwxrwxrwx  1 root root       33 Oct 20 12:42 libopencv_surface_matching.so -> libopencv_surface_matching.so.3.3
+lrwxrwxrwx  1 root root       35 Oct 20 12:42 libopencv_surface_matching.so.3.3 -> libopencv_surface_matching.so.3.3.0
+-rw-r--r--  1 root staff  308188 Oct 10 10:18 libopencv_surface_matching.so.3.3.0
+lrwxrwxrwx  1 root root       21 Oct 20 12:42 libopencv_text.so -> libopencv_text.so.3.3
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_text.so.3.3 -> libopencv_text.so.3.3.0
+-rw-r--r--  1 root staff  365580 Oct 10 10:54 libopencv_text.so.3.3.0
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_tracking.so -> libopencv_tracking.so.3.3
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_tracking.so.3.3 -> libopencv_tracking.so.3.3.0
+-rw-r--r--  1 root staff 3403256 Oct 10 11:03 libopencv_tracking.so.3.3.0
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_videoio.so -> libopencv_videoio.so.3.3
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_videoio.so.3.3 -> libopencv_videoio.so.3.3.0
+-rw-r--r--  1 root staff  206476 Oct 10 10:32 libopencv_videoio.so.3.3.0
+lrwxrwxrwx  1 root root       22 Oct 20 12:42 libopencv_video.so -> libopencv_video.so.3.3
+lrwxrwxrwx  1 root root       24 Oct 20 12:42 libopencv_video.so.3.3 -> libopencv_video.so.3.3.0
+-rw-r--r--  1 root staff  392208 Oct 10 10:27 libopencv_video.so.3.3.0
+lrwxrwxrwx  1 root root       26 Oct 20 12:42 libopencv_videostab.so -> libopencv_videostab.so.3.3
+lrwxrwxrwx  1 root root       28 Oct 20 12:42 libopencv_videostab.so.3.3 -> libopencv_videostab.so.3.3.0
+-rw-r--r--  1 root staff  342432 Oct 10 11:15 libopencv_videostab.so.3.3.0
+lrwxrwxrwx  1 root root       28 Oct 20 12:42 libopencv_xfeatures2d.so -> libopencv_xfeatures2d.so.3.3
+lrwxrwxrwx  1 root root       30 Oct 20 12:42 libopencv_xfeatures2d.so.3.3 -> libopencv_xfeatures2d.so.3.3.0
+-rw-r--r--  1 root staff 2854348 Oct 10 11:18 libopencv_xfeatures2d.so.3.3.0
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_ximgproc.so -> libopencv_ximgproc.so.3.3
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_ximgproc.so.3.3 -> libopencv_ximgproc.so.3.3.0
+-rw-r--r--  1 root staff 1094064 Oct 10 11:21 libopencv_ximgproc.so.3.3.0
+lrwxrwxrwx  1 root root       27 Oct 20 12:42 libopencv_xobjdetect.so -> libopencv_xobjdetect.so.3.3
+lrwxrwxrwx  1 root root       29 Oct 20 12:42 libopencv_xobjdetect.so.3.3 -> libopencv_xobjdetect.so.3.3.0
+-rw-r--r--  1 root staff   92560 Oct 10 10:31 libopencv_xobjdetect.so.3.3.0
+lrwxrwxrwx  1 root root       23 Oct 20 12:42 libopencv_xphoto.so -> libopencv_xphoto.so.3.3
+lrwxrwxrwx  1 root root       25 Oct 20 12:42 libopencv_xphoto.so.3.3 -> libopencv_xphoto.so.3.3.0
+-rw-r--r--  1 root staff  227452 Oct 10 10:28 libopencv_xphoto.so.3.3.0
+drwxr-xr-x  2 root root     4096 Oct 20 12:42 pkgconfig
+drwxr-xr-x  3 root root     4096 Oct 20 12:42 pypy2.7
+drwxr-xr-x  4 root root     4096 Oct 20 12:42 python2.7
+drwxr-xr-x  4 root root     4096 Oct 20 12:42 python3.5
+-rw-r--r--  1 root root        0 Oct 20 12:47 symlink.txt
