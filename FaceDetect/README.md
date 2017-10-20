@@ -1,12 +1,8 @@
-Run the code like this:
+# Basic Face Detection Program to test OpenCV
 
-*python face_detect.py abba.png*
+```
+python face_detect.py sample.png
+```
 
-If you want to understand how the code works, the details are here:
-
-https://realpython.com/blog/python/face-recognition-with-python/
-
-
-Update: Now supports OpenCV3. This change has been made by furetosan ( https://github.com/furetosan) and tested on Linux.
-
-To run the OpenCV3 version, run facedetect_cv3.py.
+* Main Author: https://github.com/shantnu/
+* Modified By: Manash 
