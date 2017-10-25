@@ -66,7 +66,7 @@ class StepperMotor(object):
             
             self.current_step += self.step_dir
 
-            if self.current_step >= self.step_count:
+            if self.current_step >= self.max_step_sequence:
                 self.current_step = 0
             else:
                 self.current_step = self.current_step + self.step_dir
