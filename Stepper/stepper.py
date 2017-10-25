@@ -1,54 +1,74 @@
-import RPi.GPIO as GPIO
+import sys
 import time
- 
-GPIO.setmode(GPIO.BCM)
- 
-enable_pin = 18
-coil_A_1_pin = 4
-coil_A_2_pin = 17
-coil_B_1_pin = 23
-coil_B_2_pin = 24
- 
-GPIO.setup(enable_pin, GPIO.OUT)
-GPIO.setup(coil_A_1_pin, GPIO.OUT)
-GPIO.setup(coil_A_2_pin, GPIO.OUT)
-GPIO.setup(coil_B_1_pin, GPIO.OUT)
-GPIO.setup(coil_B_2_pin, GPIO.OUT)
- 
-GPIO.output(enable_pin, 1)
- 
-def forward(delay, steps):  
-  for i in range(0, steps):
-    setStep(1, 0, 1, 0)
-    time.sleep(delay)
-    setStep(0, 1, 1, 0)
-    time.sleep(delay)
-    setStep(0, 1, 0, 1)
-    time.sleep(delay)
-    setStep(1, 0, 0, 1)
-    time.sleep(delay)
- 
-def backwards(delay, steps):  
-  for i in range(0, steps):
-    setStep(1, 0, 0, 1)
-    time.sleep(delay)
-    setStep(0, 1, 0, 1)
-    time.sleep(delay)
-    setStep(0, 1, 1, 0)
-    time.sleep(delay)
-    setStep(1, 0, 1, 0)
-    time.sleep(delay)
- 
-  
-def setStep(w1, w2, w3, w4):
-  GPIO.output(coil_A_1_pin, w1)
-  GPIO.output(coil_A_2_pin, w2)
-  GPIO.output(coil_B_1_pin, w3)
-  GPIO.output(coil_B_2_pin, w4)
- 
-while True:
-  delay = raw_input("Delay between steps (milliseconds)?")
-  steps = raw_input("How many steps forward? ")
-  forward(int(delay) / 1000.0, int(steps))
-  steps = raw_input("How many steps backwards? ")
-  backwards(int(delay) / 1000.0, int(steps))
+import RPi.GPIO as GPIO
+
+
+class StepperMotor(object):
+
+    SEQUENCE = [[1,0,0,1],
+       [1,0,0,0],
+       [1,1,0,0],
+       [0,1,0,0],
+       [0,1,1,0],
+       [0,0,1,0],
+       [0,0,1,1],
+       [0,0,0,1]]
+
+    
+    def __init__(self, pins):
+        # Assign pins
+        self.pins = pins
+        
+        # Current step sequence
+        self.current_step = 0
+
+        # Default Step direction
+        self.step_dir = 1
+
+        # Use BCM GPIO references
+        GPIO.setmode(GPIO.BCM)
+
+        # Setup the pin
+        for pin in self.pins:
+            GPIO.setup(pin, GPIO.OUT)
+            GPIO.output(pin, False)
+
+        # Max step sequence count
+        self.max_step_sequence = len(StepperMotor.SEQUENCE)
+
+        # Default delay
+        self.step_delay = 5
+
+        # Pincount
+        self.pin_count = len(self.pins)
+
+    
+    # Sets step direction. +1, +2 and -1, -2
+    def set_direction(self, dir):
+        self.step_dir = dir
+
+    # Step delay
+    def set_step_delay(self, delay_time):
+        self.step_delay = delay_time
+
+    # Set step direction before calling this function
+    def step(self, step_count):
+        # Perform number of steps
+        for i in range(step_count):
+            for pin in range(0, self.pin_count):
+                # Get Motor GPIO
+                _pin = self.pins[pin]
+
+                if StepperMotor.SEQUENCE[self.current_step][_pin] != 0:
+                    GPIO.output(_pin, True)
+                else:
+                    GPIO.output(_pin, False)
+            
+            self.current_step += self.step_dir
+
+            if self.current_step >= self.step_count:
+                self.current_step = 0
+            else:
+                self.current_step = self.current_step + self.step_dir
+
+            time.sleep(self.step_delay) 
