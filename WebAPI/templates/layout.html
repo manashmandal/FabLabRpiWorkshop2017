@@ -60,12 +60,31 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
     <!-- <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="http://d3plus.org/js/d3.js"></script>
     <script src="http://d3plus.org/js/d3plus.js"></script>
-
+    
+    <script type="text/javascript">
+      $SCRIPT_ROOT = {{ request.script_root|tojson|safe }}
+    </script>
     
     <script>
+      
+      setInterval(function(){
+        var data_length = 0; 
+        $.getJSON($SCRIPT_ROOT + '/api/get_data', function(response){
+          console.log(response);
+          data_length = response.all_data.length;
+        });
+
+        console.log(data_length);
+      }
+      , 3000);
+
       var sample_data = [
         {"name": "alpha", "skill": "power", "value": 4},
         {"name": "alpha", "skill": "courage", "value": 8},
