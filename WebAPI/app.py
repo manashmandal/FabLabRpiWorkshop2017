@@ -46,6 +46,13 @@ def get_latest_data():
     cursor = db.cursor()
     return cursor.execute('select * from sensors').fetchone()
 
+@app.route('/api/clear_data', methods=['GET'])
+def clear_all():
+    db = sql.connect(DATABASE)
+    cursor = db.cursor()
+    cursor.execute('delete * from sensors')
+    return jsonify({'success' : 'cleared all'})
+
 
 @app.route('/api/insert_data', methods=['GET'])
 def api_insert_data():
@@ -61,6 +68,8 @@ def api_insert_data():
 
     insert_data(data_dict)
 
+    return jsonify({'success' : 'ok'})
+
 
 @app.route('/api/get_data', methods=['GET'])
 def api_get_data():
@@ -68,6 +77,16 @@ def api_get_data():
        'all_data' : get_all_data()
     })
 
+@app.route('/api/data', methods=['GET'])
+def api_get_latest_data():
+    try:
+        return jsonify({
+            'latest' : get_all_data()[-1]
+        })
+    except:
+        return jsonify({
+            'error' : 'NO data available'
+        })
 
 @app.route('/')
 def index():

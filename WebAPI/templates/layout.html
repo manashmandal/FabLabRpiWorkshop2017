@@ -44,9 +44,15 @@
         <h1>Bootstrap starter template</h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
-
     </main><!-- /.container -->
 
+    
+    <div class="container">
+      <div id="viz">
+        
+      </div>
+    </div>
+  
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -55,5 +61,27 @@
     <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script> -->
     <!-- <script src="../../../../assets/js/vendor/popper.min.js"></script> -->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="http://d3plus.org/js/d3.js"></script>
+    <script src="http://d3plus.org/js/d3plus.js"></script>
+
+    
+    <script>
+      var sample_data = [
+        {"name": "alpha", "skill": "power", "value": 4},
+        {"name": "alpha", "skill": "courage", "value": 8},
+        {"name": "alpha", "skill": "wisdom", "value": 2},
+        {"name": "beta", "skill": "power", "value": 5},
+        {"name": "beta", "skill": "courage", "value": 4},
+        {"name": "beta", "skill": "wisdom", "value": 6}
+      ];
+      
+      var visualization = d3plus.viz()
+        .container("#viz")
+        .data(sample_data)
+        .id(["name", "skill"])
+        .size("value")
+        .type("radar")
+        .draw();
+    </script>
   </body>
 </html>
