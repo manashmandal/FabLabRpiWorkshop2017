@@ -50,7 +50,8 @@ def get_latest_data():
 def clear_all():
     db = sql.connect(DATABASE)
     cursor = db.cursor()
-    cursor.execute('delete * from sensors')
+    cursor.execute('delete from sensors')
+    db.commit()
     return jsonify({'success' : 'cleared all'})
 
 
