@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Fab Lab Rpi Workshop</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
@@ -31,24 +31,18 @@
             <a class="nav-link" href="#">Visualization web App for Sensor Data<span class="sr-only">(current)</span></a>
 
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </form> -->
       </div>
     </nav>
 
-    <main role="main" class="container">
-
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
-    </main><!-- /.container -->
+    <!-- /.container -->
 
     
     <div class="container">
-      <div id="viz">
+      <div id="viz" style="max-height: 500px;">
         
       </div>
     </div>
@@ -75,32 +69,33 @@
     <script>
       
       setInterval(function(){
-        var data_length = 0; 
-        $.getJSON($SCRIPT_ROOT + '/api/get_data', function(response){
-          console.log(response);
-          data_length = response.all_data.length;
-        });
+        $("#viz").empty();
 
-        console.log(data_length);
+        $.getJSON($SCRIPT_ROOT + '/api/data', function(response){
+          console.log(response);
+        
+
+          var data = [
+            {"name" : "humidity", "value" : response.latest.humidity},
+            {"name" : "pressure", "value" : response.latest.pressure},
+            {"name" : "temperature", "value" : response.latest.temperature}
+          ];
+          
+          var visualization = d3plus.viz()
+                  .height(500)
+                  .container("#viz")
+                  .data(data)
+                  .type("bar")
+                  .id("name")
+                  .x("name")
+                  .y("value")
+                  .draw();
+        
+        });
       }
+    
       , 3000);
 
-      var sample_data = [
-        {"name": "alpha", "skill": "power", "value": 4},
-        {"name": "alpha", "skill": "courage", "value": 8},
-        {"name": "alpha", "skill": "wisdom", "value": 2},
-        {"name": "beta", "skill": "power", "value": 5},
-        {"name": "beta", "skill": "courage", "value": 4},
-        {"name": "beta", "skill": "wisdom", "value": 6}
-      ];
-      
-      var visualization = d3plus.viz()
-        .container("#viz")
-        .data(sample_data)
-        .id(["name", "skill"])
-        .size("value")
-        .type("radar")
-        .draw();
     </script>
   </body>
 </html>

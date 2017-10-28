@@ -29,12 +29,11 @@ def get_all_data():
     for row in cursor.execute('select * from sensors'):
         id, hum, pre, temp, timestmp = row
         data.append({
-            id: {
+                'id' : id,
                 'humidity' : hum,
                 'pressure' : pre,
                 'temperature' : temp,
                 'timestamp' : timestmp
-            }
         })
 
     # data = [row for row in cursor.execute('select * from sensors')]
