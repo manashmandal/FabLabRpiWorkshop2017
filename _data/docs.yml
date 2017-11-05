@@ -2,10 +2,27 @@
   docs:
   - home
   - gpio
-  - customization
+  - picam
 
-- title: Examples
+#- title: Examples
+#  docs:
+#  - cheatsheet
+#  - font-awesome
+#  - bootstrap
+
+- title: Projects
   docs:
-  - cheatsheet
-  - font-awesome
-  - bootstrap
+  - photobooth
+#  - sensorstation
+#  - sensorstationweb
+#  - sensortweet
+#  - stopmotion
+#  - cameratrap
+#  - retrogame
+#  - homeautomation
+#  - radio
+
+
+- title: Slides
+  docs:
+  - linuxcmd
