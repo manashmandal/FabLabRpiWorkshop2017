@@ -128,3 +128,4 @@ pkg/
 site/_site/
 test/dest
 tmp/*
+_config.yml
