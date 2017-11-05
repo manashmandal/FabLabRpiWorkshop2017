@@ -1,7 +1,7 @@
 - title: Getting Started
   docs:
   - home
-  - test
+  - gpio
   - customization
 
 - title: Examples
