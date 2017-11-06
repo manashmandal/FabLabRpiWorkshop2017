@@ -3,7 +3,7 @@ title: Python Intro
 permalink: /docs/python-intro/
 ---
 
-### Instructor: Mamun EEE, 2k14
+### Instructor: Zabir Al Nazi Nabil, ECE-2k14
 
 
 ```python

@@ -29,5 +29,8 @@
 
 - title: Python Workshop
   docs:
+  - python-setup
   - python-intro
   - python-ds
+  - python-oop
+  - python-resource

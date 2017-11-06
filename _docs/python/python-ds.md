@@ -3,7 +3,7 @@ title: Python Data Structures
 permalink: /docs/python-ds/
 ---
 
-### Instructor: Hasan Mahmud Shauqi, CSE 2k13 
+### Instructor: Hasan Mahmud Shauqi, CSE-2k13 
 
 ## Lists
 
