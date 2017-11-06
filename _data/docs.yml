@@ -26,3 +26,7 @@
 - title: Slides
   docs:
   - linuxcmd
+
+- title: Python Workshop
+  docs:
+  - python-intro
